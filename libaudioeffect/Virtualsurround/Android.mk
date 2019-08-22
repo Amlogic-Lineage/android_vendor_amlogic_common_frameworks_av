@@ -26,8 +26,8 @@ LOCAL_C_INCLUDES := \
 LOCAL_SRC_FILES += Virtualsurround.cpp
 
 LOCAL_LDFLAGS_arm  += $(LOCAL_PATH)/libmusicbundle.a
-#LOCAL_LDFLAGS_arm64  += $(LOCAL_PATH)/libmusicbundle64.a
-#LOCAL_MULTILIB := both
+LOCAL_LDFLAGS_arm64  += $(LOCAL_PATH)/libmusicbundle64.a
+LOCAL_MULTILIB := 32
 LOCAL_PRELINK_MODULE := false
 
 LOCAL_LDLIBS   +=  -llog
